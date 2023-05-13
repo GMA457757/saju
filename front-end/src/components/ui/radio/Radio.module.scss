@@ -1,0 +1,15 @@
+.radio-container {
+	label {
+		@apply flex items-center gap-x-1;
+		span {
+			@apply h-5 w-5 border border-black rounded-full flex items-center justify-center;
+		}
+		input:checked + span {
+			background-color: black;
+			&::after {
+				content: '';
+				@apply w-2 h-2 bg-white rounded-full block;
+			}
+		}
+	}
+}
